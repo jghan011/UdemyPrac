@@ -75,7 +75,44 @@ yearsUntilRetirement(1990, "John");
 
 ///////  ARRAYS   ////////
 
-var names = ["John", "Mark", "Jane"];
-var years = new Array(1990, 1969, 1948);
+// var names = ["John", "Mark", "Jane"];
+// var years = new Array(1990, 1969, 1948);
 
-console.log(names[0]);
+// console.log(names[0]);
+// Different data types
+
+// var john = ["John", "Smith", 1990, "teacher", false];
+
+// john.push("blue"); //puts it at the end of the array
+// john.unshift("Mr."); //at the begining of the array
+// john.shift(); //removes first element
+// // john.pop(); //remove last Element
+// console.log(john);
+// console.log(john.indexOf(1990)); //will return which position it appears in the array
+
+///objects and properties
+//Object literals
+var john = {
+  firstName: "John",
+  lastName: "Smith",
+  birthYear: 1990,
+  family: ["Jane", "Mark", "Bob", "Emily"],
+  job: "teacher",
+  isMarried: false,
+};
+
+console.log(john);
+// dot notation to access each property
+// you can also use bracket notation to retreive
+console.log(john.firstName);
+console.log(john["lastName"]);
+var x = "birthYear";
+console.log(john[x]); //wil now print 1990
+
+//create
+var jane = new Object(); //creates new empty object
+jane.name = "Jane";
+jane.birthYear = 1969;
+jane["lastName"] = "Smith";
+console.log(jane);
+.//now you will see the object and it's properties
